@@ -1,0 +1,32 @@
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    color: #7f68af;
+}
+
+#panel1a-header>div.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content>p,
+#panel2a-header>div.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content>p,
+#panel2a-header>div.MuiAccordionSummary-content.MuiAccordionSummary-contentGutters.css-o4b71y-MuiAccordionSummary-content>p {
+    color: #291452;
+}
+
+#accordion__container {
+    max-width: 60%;
+    margin: auto;
+}
+
+#accordion__container h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    overflow: hidden;
+}
+
+@media screen and (max-width:700px) {
+    #accordion__container {
+        max-width: 80%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #accordion__container {
+        max-width: 90%;
+    }
+}

@@ -1,4 +1,5 @@
 import About from "./comoponents/About";
+import SimpleAccordion from "./comoponents/Accordion";
 import Header from "./comoponents/Header";
 import HeroSection from "./comoponents/HeroSection";
 
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <HeroSection />
       <About />
+      <SimpleAccordion />
     </div>
   );
 }
