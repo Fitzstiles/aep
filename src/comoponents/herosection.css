@@ -39,7 +39,8 @@
 .image__container {
     width: 200px;
     height: 200px;
-    padding: 20px;
+    /* padding: 20px; */
+    margin: 20px;
 }
 
 .image__container img {
@@ -48,6 +49,10 @@
     object-fit: cover;
     border-radius: 10px;
 }
+
+/* .image__container p {
+    margin: 10px;
+} */
 
 @media screen and (max-width:754px) {
     .herosection__container {
@@ -66,8 +71,13 @@
 }
 
 @media screen and (max-width:600px) {
+    .herosection__container {
+        max-width: 90%;
+    }
+
     .image__container {
         width: 300px;
+        text-align: center;
     }
 
     .left__container h1 {
