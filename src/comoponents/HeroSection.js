@@ -4,7 +4,7 @@ const HeroSection = () => {
     {
       image:
         "https://cdn-7.nikon-cdn.com/Images/Learn-Explore/Photography-Techniques/2016/Graduation-photo-tips/Media/Graduation-photos-2-girlfriends.jpg",
-      p: "Graduation Ceremony",
+      p: "Graduation",
     },
     {
       image:
