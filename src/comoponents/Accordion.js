@@ -15,10 +15,12 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography>Where is AEP available ?</Typography>
+          <Typography style={{ color: "#291452", fontSize: "20px" }}>
+            Where is AEP available ?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ color: "#7f68af" }}>
             AEP will be available for iOS, Android, and web very soon! We're
             launching in France, but plan to expand rapidly to the rest of
             Europe and from there, around the world! Check the app to see if
@@ -32,10 +34,12 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>What events can I organise ?</Typography>
+          <Typography style={{ color: "#291452", fontSize: "20px" }}>
+            What events can I organise ?
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ color: "#7f68af" }}>
             You can organize anything! It could be birthdays, dinners, baby
             showers, bachelor parties, weddings, surprises to your friends or
             family, baptisms, proms, date nights, Girls date/Brunch, Bridal
@@ -49,15 +53,21 @@ export default function SimpleAccordion() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography>
+          <Typography style={{ color: "#291452", fontSize: "20px" }}>
             What services for my event can I find on AEP ?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
+          <Typography style={{ color: "#7f68af" }}>
             Here's a list of some of our popular services, but there are many
-            more you'll find on AEP -Event planning -Catering services -Venues
-            -Djs -Decorators Party Designers
+            more you'll find at AEP <br />
+            -Event planning <br />
+            -Catering services <br />
+            -Venues
+            <br />
+            -Djs <br />
+            -Decorators <br />
+            -Party Designers
           </Typography>
         </AccordionDetails>
       </Accordion>

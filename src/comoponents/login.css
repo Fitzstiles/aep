@@ -1,0 +1,15 @@
+.login__container {
+    background: url('https://briarsatlas.com/wp-content/uploads/2020/08/deux-belettes-byron-bay-wedding-photographer-17458.jpg');
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* color: white; */
+    padding-top: 20px;
+}
+
+.input__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+}

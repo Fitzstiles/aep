@@ -2,6 +2,7 @@ import About from "./comoponents/About";
 import SimpleAccordion from "./comoponents/Accordion";
 import Header from "./comoponents/Header";
 import HeroSection from "./comoponents/HeroSection";
+// import Login from "./comoponents/Login";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <About />
       <SimpleAccordion />
+      {/* <Login /> */}
     </div>
   );
 }
