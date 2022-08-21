@@ -19,7 +19,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            INVITE will be available for iOS, Android, and web very soon! We're
+            AEP will be available for iOS, Android, and web very soon! We're
             launching in France, but plan to expand rapidly to the rest of
             Europe and from there, around the world! Check the app to see if
             there are services listed in your area.
