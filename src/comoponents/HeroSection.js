@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./herosection.css";
 const HeroSection = () => {
   const imageData = [
@@ -30,7 +31,7 @@ const HeroSection = () => {
           With us , customization is 100% guaranteed from the very beginning, we
           will create a custom event tailored to your specific want and needs
         </p>
-        <a href="/">Chat with us</a>
+        <Link to="/login">Chat with us</Link>
       </div>
       <div className="right__container">
         {imageData.map((image) => (

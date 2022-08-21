@@ -79,3 +79,9 @@
         margin-top: 40px;
     }
 }
+
+
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
+    border: none;
+}

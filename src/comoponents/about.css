@@ -1,6 +1,6 @@
 .about__container {
     margin: 40px auto;
-    background-color: black;
+    background: linear-gradient(to bottom, #1B0C33, #1E0C33);
 }
 
 
@@ -10,7 +10,6 @@ h2 {
 }
 
 .aboutDetails__container {
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;

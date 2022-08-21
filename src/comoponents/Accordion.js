@@ -15,16 +15,21 @@ export default function SimpleAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography style={{ color: "#291452", fontSize: "20px" }}>
+          <Typography
+            style={{
+              color: "#291452",
+              fontSize: "20px",
+            }}
+          >
             Where is AEP available ?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography style={{ color: "#7f68af" }}>
-            AEP will be available for iOS, Android, and web very soon! We're
-            launching in France, but plan to expand rapidly to the rest of
-            Europe and from there, around the world! Check the app to see if
-            there are services listed in your area.
+            AEP will be available for iOS and Android very soon! We're launching
+            in France, but plan to expand rapidly to the rest of Europe and from
+            there, around the world! Check the app to see if there are services
+            listed in your area.
           </Typography>
         </AccordionDetails>
       </Accordion>

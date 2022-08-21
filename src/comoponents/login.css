@@ -1,5 +1,5 @@
 .login__container {
-    background: url('https://briarsatlas.com/wp-content/uploads/2020/08/deux-belettes-byron-bay-wedding-photographer-17458.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/free-photo/bride-groom-having-their-wedding-beach_23-2149043964.jpg?w=2000');
     height: 100vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -8,8 +8,11 @@
 }
 
 .input__container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 200px;
+    height: 100%;
+}
+
+@media screen and (min-width:760px) {
+    .login__container {
+        background: blueviolet;
+    }
 }
