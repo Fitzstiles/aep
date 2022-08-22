@@ -47,7 +47,7 @@
     border-radius: 30px;
     transition: .4s;
     animation-name: entry;
-    animation-duration: 5s;
+    animation-duration: 1s;
 }
 
 .input__section a:hover {
