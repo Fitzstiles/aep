@@ -7,6 +7,7 @@
 .about__container h1,
 h2 {
     text-align: center;
+    padding-top: 20px;
 }
 
 .aboutDetails__container {

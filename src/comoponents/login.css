@@ -36,11 +36,18 @@
     height: 100vh;
 }
 
+.input__section h1 {
+    animation-name: show;
+    animation-duration: 5s;
+}
+
 .input__section a {
     border: 1px solid #7f68af;
     padding: 5px 20px;
     border-radius: 30px;
     transition: .4s;
+    animation-name: entry;
+    animation-duration: 5s;
 }
 
 .input__section a:hover {
@@ -55,8 +62,31 @@
     padding: 15px 30px;
     border-radius: 20px;
     outline: none;
+    color: white;
+    animation-name: show;
+    animation-duration: 1s;
 }
 
-.input__section input {
-    color: white;
+.input__section input::placeholder {
+    color: rgb(197, 182, 182);
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes entry {
+    0% {
+        transform: translateY(10vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
