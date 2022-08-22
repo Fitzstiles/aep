@@ -10,7 +10,7 @@ const HeroSection = () => {
     },
     {
       image:
-        "https://img.freepik.com/free-photo/bride-groom-having-their-wedding-beach_23-2149043964.jpg?w=2000",
+        "https://media.istockphoto.com/photos/bride-and-groom-enjoying-in-their-love-picture-id868924246?b=1&k=20&m=868924246&s=170667a&w=0&h=iVeEWxB5_jQ6FsPA0fQeAVpOpOSpRdDiJ3fN8VYq-Ns=",
       p: "Weddings",
     },
     {

@@ -38,6 +38,7 @@
 }
 
 .image__container {
+    text-align: center;
     width: 200px;
     height: 200px;
     margin: 20px;
@@ -73,16 +74,9 @@
 
     .image__container {
         width: 300px;
-        text-align: center;
     }
 
     .left__container h1 {
         margin-top: 40px;
     }
-}
-
-
-
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root:first-of-type {
-    border: none;
 }
