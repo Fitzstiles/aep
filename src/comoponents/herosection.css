@@ -28,6 +28,7 @@
     background-color: #464ad3;
     padding: 12px 45px;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .right__container {

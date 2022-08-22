@@ -1,22 +1,3 @@
-/* .login__container {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://img.freepik.com/free-photo/bride-groom-having-their-wedding-beach_23-2149043964.jpg?w=2000');
-    height: 100vh;
-    background-size: contain;
-    background-repeat: no-repeat;
-    color: white;
-    padding-top: 20px;
-} */
-
-/* .input__container {
-    height: 100%;
-} */
-/* 
-@media screen and (min-width:760px) {
-    .login__container {
-        background: blueviolet;
-    }
-} */
-
 .login__container {
     width: 100%;
     position: relative;
@@ -64,5 +45,18 @@
 
 .input__section a:hover {
     background-color: #7f68af;
+    color: white;
+}
+
+.input__section input {
+    border: none;
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input__section input {
     color: white;
 }

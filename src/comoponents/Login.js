@@ -16,7 +16,8 @@ const Login = () => {
         </Link>
         <div className="input__section">
           <h1>Create Account</h1>
-          <input type="text" placeholder="Email" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="password" />
           <Link to="/">Sign up</Link>
         </div>
       </div>

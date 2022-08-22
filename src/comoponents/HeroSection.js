@@ -28,7 +28,7 @@ const HeroSection = () => {
       <div className="left__container">
         <h1>Tell us what you want to celebrate and leave the rest to us</h1>
         <p>
-          With us , customization is 100% guaranteed from the very beginning, we
+          With us, customization is 100% guaranteed from the very beginning, we
           will create a custom event tailored to your specific want and needs
         </p>
         <Link to="/login">Chat with us</Link>
