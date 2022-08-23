@@ -1,7 +1,7 @@
 import "./login.css";
 import { Link } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-const Login = () => {
+const Login = ({ headers, text, link }) => {
   return (
     <div className="login__container">
       <div className="bg__img">
@@ -15,10 +15,15 @@ const Login = () => {
           <ArrowBackIosIcon />
         </Link>
         <div className="input__section">
-          <h1>Create Account</h1>
+          <h1>{headers}</h1>
+          <p>
+            {text} <Link to="/signin">{link}</Link>
+          </p>
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="password" />
-          <Link to="/">Sign up</Link>
+          <Link to="/" className="links">
+            Sign in
+          </Link>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import "./herosection.css";
 const HeroSection = () => {
   const imageData = [
@@ -24,24 +23,6 @@ const HeroSection = () => {
       p: "Concerts",
     },
   ];
-  const container = {
-    show: {
-      transition: {
-        staggerChildren: 0.35,
-      },
-    },
-  };
-
-  const item = {
-    hidden: {
-      opacity: 0,
-    },
-    show: {
-      opacity: 1,
-      transition: "ease",
-      durration: 1.6,
-    },
-  };
   return (
     <div className="herosection__container">
       <div className="left__container">
@@ -54,15 +35,10 @@ const HeroSection = () => {
       </div>
       <div className="right__container">
         {imageData.map((image) => (
-          <motion.div
-            vartiants={container}
-            initial="hidden"
-            animate="show"
-            className="image__container"
-          >
-            <img variants={item} src={image.image} alt="" />
+          <div className="image__container">
+            <img src={image.image} alt="" />
             <p>{image.p}</p>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

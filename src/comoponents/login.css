@@ -41,7 +41,7 @@
     animation-duration: 5s;
 }
 
-.input__section a {
+.links {
     border: 1px solid #7f68af;
     padding: 5px 20px;
     border-radius: 30px;
@@ -50,7 +50,7 @@
     animation-duration: 1s;
 }
 
-.input__section a:hover {
+.links:hover {
     background-color: #7f68af;
     color: white;
 }
