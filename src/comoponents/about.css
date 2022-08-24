@@ -1,8 +1,11 @@
 .about__container {
     margin: 40px auto;
     background: linear-gradient(to bottom, #1B0C33, #1E0C33);
+    border-radius: 30px;
+    margin: 5px;
+    padding: 20px 0;
+    margin-bottom: 20px;
 }
-
 
 .about__container h1,
 h2 {

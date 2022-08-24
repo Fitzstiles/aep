@@ -15,15 +15,17 @@ const Login = ({ headers, text, link }) => {
           <ArrowBackIosIcon />
         </Link>
         <div className="input__section">
-          <h1>{headers}</h1>
-          <p>
-            {text} <Link to="/signin">{link}</Link>
-          </p>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="password" />
-          <Link to="/" className="links">
-            Sign in
-          </Link>
+          <form action="/">
+            <h1>{headers}</h1>
+            <p>
+              {text} <Link to="/signin">{link}</Link>
+            </p>
+            <input type="email" placeholder="Email" />
+            <input type="password" placeholder="password" />
+            <button type="submit" className="links">
+              Sign in
+            </button>
+          </form>
         </div>
       </div>
     </div>

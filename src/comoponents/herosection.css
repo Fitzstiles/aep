@@ -6,6 +6,7 @@
     margin: auto;
     color: #7f68af;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 
 .left__container {
@@ -15,6 +16,8 @@
 .left__container h1 {
     text-transform: uppercase;
     color: #291452;
+    animation-name: show;
+    animation-duration: 1.5s;
 }
 
 .left__container p {

@@ -27,7 +27,7 @@
     margin: 40px 20px;
 }
 
-.input__section {
+form {
     display: flex;
     align-items: center;
     gap: 50px;
@@ -48,6 +48,9 @@
     transition: .4s;
     animation-name: entry;
     animation-duration: 1s;
+    background: transparent;
+    color: #7f68af;
+    cursor: pointer;
 }
 
 .links:hover {
@@ -55,7 +58,7 @@
     color: white;
 }
 
-.input__section input {
+form input {
     border: none;
     background: transparent;
     background-color: rgba(255, 255, 255, 0.2);
@@ -67,26 +70,6 @@
     animation-duration: 1s;
 }
 
-.input__section input::placeholder {
+form input::placeholder {
     color: rgb(197, 182, 182);
-}
-
-@keyframes show {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes entry {
-    0% {
-        transform: translateY(10vh);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
 }

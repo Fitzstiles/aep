@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Body from "./comoponents/Body";
+import Chat from "./comoponents/Chat";
 import Login from "./comoponents/Login";
 
 function App() {
@@ -19,8 +20,14 @@ function App() {
         />
         <Route
           path="/signin"
-          element={<Login headers={"Log in"} text={"Email and password"} />}
+          element={
+            <Login
+              headers={"Log in"}
+              text={" Type in your email and password"}
+            />
+          }
         />
+        <Route path="/chat" element={<Chat />} />
       </Routes>
     </div>
   );

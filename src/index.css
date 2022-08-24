@@ -31,3 +31,24 @@ code {
 #dark {
   background-color: black;
 }
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes entry {
+  0% {
+    transform: translateY(10vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

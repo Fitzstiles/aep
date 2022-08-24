@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./herosection.css";
+import { motion } from "framer-motion";
 const HeroSection = () => {
   const imageData = [
     {
@@ -31,14 +32,25 @@ const HeroSection = () => {
           With us, customization is 100% guaranteed from the very beginning, we
           will create a custom event tailored to your specific want and needs
         </p>
-        <Link to="/login">Chat with us</Link>
+        <motion.div
+          initial={{ translateX: "-100vw" }}
+          animate={{ translateX: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <Link to="/login">Chat with us</Link>
+        </motion.div>
       </div>
       <div className="right__container">
-        {imageData.map((image) => (
-          <div className="image__container">
+        {imageData.map((image, i) => (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: i * 0.4 }}
+            className="image__container"
+          >
             <img src={image.image} alt="" />
             <p>{image.p}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
