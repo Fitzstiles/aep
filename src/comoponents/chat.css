@@ -1,34 +1,159 @@
 .chat__container {
-    padding-top: 30px;
-    background-color: #f5f5f2;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.left__chat {
     height: 100vh;
     width: 300px;
+    border-right: 1px solid rgb(236, 233, 233);
 }
 
 .chat__header {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-left: 10px;
+    margin-bottom: 40px;
+    padding-top: 18px;
+}
+
+.header__image {
+    width: 50px;
+    height: 50px;
+}
+
+.header__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .chats {
-    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #7a7a80;
-    padding: 10px 20px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .details {
     display: flex;
-    gap: 50px;
+    gap: 70px;
+    align-items: center;
 }
 
+/* .deatils__d small {
+    font-size: x-small;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+} */
+
 .details span {
-    background-color: red;
-    padding: 4px;
+    background-color: #7f68af;
     border-radius: 50%;
+    width: max-content;
+    height: max-content;
+    padding: 5px;
     color: white;
     font-size: 10px;
+}
+
+/* Styling the message component */
+/* .message__container {
+    margin: 20px;
+} */
+
+.message__header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(16px);
+    width: 100vh;
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.messageimg__container {
+    width: 50px;
+    height: 50px;
+}
+
+.messageimg__container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user__details p {
+    font-size: 12px;
+}
+
+.messages {
+    margin: 10px;
+}
+
+.user__messages {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.user__messages p {
+    background-color: white;
+    width: max-content;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.sender__messages {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.sender__messages p {
+    background-color: #7f68af;
+    color: white;
+    width: max-content;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.user__mssgImg {
+    width: 40px;
+    height: 40px;
+}
+
+.user__mssgImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.send__msg {
+    display: flex;
+    position: fixed;
+    bottom: 2px;
+}
+
+.send__msg input {
+    /* border: none; */
+    outline: none;
+    width: 100%;
+    flex: 1;
 }

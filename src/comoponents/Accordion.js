@@ -4,12 +4,14 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./accordion.css";
+import { useStateValue } from "./stateManagement/StateContext";
 
 export default function SimpleAccordion() {
+  const { theme } = useStateValue();
   return (
     <div id="accordion__container">
       <h1>Frequently Asked Questions</h1>
-      <Accordion style={{ boxShadow: "none" }}>
+      <Accordion id={theme} style={{ boxShadow: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
@@ -33,7 +35,7 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{ boxShadow: "none" }}>
+      <Accordion id={theme} style={{ boxShadow: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -52,7 +54,7 @@ export default function SimpleAccordion() {
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion style={{ boxShadow: "none" }}>
+      <Accordion id={theme} style={{ boxShadow: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"

@@ -37,15 +37,15 @@ const HeroSection = () => {
           animate={{ translateX: 0 }}
           transition={{ duration: 1 }}
         >
-          <Link to="/login">Chat with us</Link>
+          <Link to="/signup">Chat with us</Link>
         </motion.div>
       </div>
       <div className="right__container">
         {imageData.map((image, i) => (
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: i * 0.4 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1, delay: i * 0.2 }}
             className="image__container"
           >
             <img src={image.image} alt="" />

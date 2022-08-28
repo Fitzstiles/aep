@@ -4,7 +4,6 @@
     align-items: center;
     max-width: 80%;
     margin: auto;
-    color: #7f68af;
     overflow: hidden;
     padding-bottom: 30px;
 }
@@ -17,7 +16,7 @@
     text-transform: uppercase;
     color: #291452;
     animation-name: show;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 .left__container p {
