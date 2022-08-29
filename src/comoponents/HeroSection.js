@@ -45,7 +45,7 @@ const HeroSection = () => {
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 1, delay: i * 0.2 }}
+            transition={{ duration: 1 }}
             className="image__container"
           >
             <img src={image.image} alt="" />

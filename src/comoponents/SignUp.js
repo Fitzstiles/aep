@@ -49,7 +49,7 @@ const SignUp = () => {
               onChange={(e) => setpassword(e.target.value)}
             />
             <button type="submit" onClick={handleSubmit} className="links">
-              Sign in
+              Sign up
             </button>
           </form>
         </div>

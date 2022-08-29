@@ -5,6 +5,7 @@
 .discounts {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     max-width: 80%;
     margin: auto;
@@ -37,8 +38,9 @@
 }
 
 .img__container {
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin: auto;
 }
 
 .img__container img {

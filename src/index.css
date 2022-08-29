@@ -37,7 +37,7 @@ code {
 }
 
 #dark .login__container {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgb(102, 102, 102);
 }
 
 #dark .chat__container {
