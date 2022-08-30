@@ -12,6 +12,12 @@ const stateContext = createContext();
 export const StateContextProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
   const [user, setUser] = useState("");
+  const [toggle, settoggle] = useState(false);
+  const handleClick = () => {
+    settoggle((toggle) => !toggle);
+  };
+  let stateCheck = toggle ? "show " : "";
+  let statechecked = toggle ? "hide" : "";
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
@@ -30,7 +36,18 @@ export const StateContextProvider = ({ children }) => {
     };
   }, []);
   return (
-    <stateContext.Provider value={{ signup, user, login, theme, toggleTheme }}>
+    <stateContext.Provider
+      value={{
+        signup,
+        user,
+        login,
+        theme,
+        toggleTheme,
+        stateCheck,
+        handleClick,
+        statechecked,
+      }}
+    >
       {children}
     </stateContext.Provider>
   );

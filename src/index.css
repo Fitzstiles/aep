@@ -36,11 +36,11 @@ code {
   transition: .6s;
 }
 
-#dark .login__container {
-  background-color: rgb(102, 102, 102);
+#dark .left__container h1 {
+  color: #7f68af;
 }
 
-#dark .chat__container {
+#dark #chat__container {
   background-color: black;
 }
 
