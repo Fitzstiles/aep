@@ -45,6 +45,9 @@ const Signin = () => {
               placeholder="password"
               onChange={(e) => setpassword(e.target.value)}
             />
+            <p>
+              Don't have an account? <Link to="/signup">Create Account</Link>
+            </p>
             <button type="submit" onClick={handleSubmit} className="links">
               log in
             </button>

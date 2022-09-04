@@ -53,6 +53,22 @@
     border-radius: 10px;
 }
 
+@media screen and (max-width:1103px) {
+    .herosection__container {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width:928px) {
+    .left__container {
+        max-width: 300px;
+    }
+
+    .image__container {
+        width: 150px;
+    }
+}
+
 @media screen and (max-width:754px) {
     .herosection__container {
         flex-direction: column;
@@ -66,6 +82,10 @@
 
     .right__container {
         margin-top: 50px;
+    }
+
+    .image__container {
+        width: 200px;
     }
 }
 

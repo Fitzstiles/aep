@@ -11,6 +11,7 @@
 .mode__toggle svg {
     cursor: pointer;
     font-size: 30px;
+    color: #464ad3;
 }
 
 .logo {

@@ -35,9 +35,6 @@ const SignUp = () => {
         <div className="input__section">
           <form onSubmit={handleSubmit}>
             <h1>Create Account</h1>
-            <p>
-              Already have an account? <Link to="/signin">Login</Link>
-            </p>
             <input
               type="email"
               placeholder="Email"

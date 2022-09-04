@@ -51,6 +51,7 @@ form {
     background: transparent;
     color: #7f68af;
     cursor: pointer;
+    margin-top: -30px;
 }
 
 .links:hover {

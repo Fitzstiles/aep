@@ -1,14 +1,9 @@
 import "./chats.css";
-import { useStateValue } from "./stateManagement/StateContext";
 import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 const Texts = () => {
-  const { stateCheck, handleClick } = useStateValue();
   return (
-    <div className={`texts__container${stateCheck}`}>
-      <ArrowBackIosNewIcon
-        style={{ marginBottom: 40, marginLeft: 20 }}
-        onClick={handleClick}
-      />
+    <div className="texts__container">
+      <ArrowBackIosNewIcon style={{ marginBottom: 40, marginLeft: 20 }} />
       <div className="textss">
         <div className="text__image">
           <img

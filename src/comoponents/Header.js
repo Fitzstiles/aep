@@ -27,15 +27,7 @@ const Adminpage = () => {
           onClick={() => setToggle(!toggle)}
           className="mode__toggle"
         >
-          {toggle ? (
-            <DarkModeIcon />
-          ) : (
-            <LightModeIcon
-              style={{
-                fill: "#464ad3",
-              }}
-            />
-          )}
+          {toggle ? <DarkModeIcon /> : <LightModeIcon />}
         </motion.div>
       </div>
     </div>
