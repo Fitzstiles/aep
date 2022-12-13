@@ -3,9 +3,7 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { useStateValue } from "./stateManagement/StateContext";
 const Adminpage = () => {
-  const { toggleTheme } = useStateValue();
   const [toggle, setToggle] = useState(false);
   return (
     <div className="header">
@@ -19,7 +17,7 @@ const Adminpage = () => {
           <h1>AEP</h1>
         </motion.div>
       </a>
-      <div onClick={toggleTheme}>
+      <div>
         <motion.div
           initial={{ translateX: 60 }}
           animate={{ translateX: 0 }}

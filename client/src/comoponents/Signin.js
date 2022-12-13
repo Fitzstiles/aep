@@ -1,24 +1,21 @@
 import "./login.css";
 import { Link } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { useState } from "react";
-import { useStateValue } from "./stateManagement/StateContext";
-import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
 
 const Signin = () => {
-  const [email, setEmail] = useState();
-  const [password, setpassword] = useState();
-  const { login } = useStateValue();
-  const navigate = useNavigate();
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await login(email, password);
-      navigate("/chat");
-    } catch (err) {
-      alert(err);
-    }
-  };
+  // const [email, setEmail] = useState();
+  // const [password, setpassword] = useState();
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await login(email, password);
+  //     navigate("/chat");
+  //   } catch (err) {
+  //     alert(err);
+  //   }
+  // };
   return (
     <div className="login__container">
       <div className="bg__img">
@@ -32,23 +29,23 @@ const Signin = () => {
           <ArrowBackIosIcon />
         </Link>
         <div className="input__section">
-          <form onSubmit={handleSubmit}>
+          <form>
             <h1>Log In</h1>
             <p>Type in your email and password</p>
             <input
               type="email"
               placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
+              // onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="password"
-              onChange={(e) => setpassword(e.target.value)}
+              // onChange={(e) => setpassword(e.target.value)}
             />
             <p>
               Don't have an account? <Link to="/signup">Create Account</Link>
             </p>
-            <button type="submit" onClick={handleSubmit} className="links">
+            <button type="submit" className="links">
               log in
             </button>
           </form>

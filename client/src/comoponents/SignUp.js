@@ -1,25 +1,21 @@
 import "./login.css";
 import { Link } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { useState } from "react";
-import { useStateValue } from "./stateManagement/StateContext";
-import { useNavigate } from "react-router-dom";
+// import { useState } from "react";
 
 const SignUp = () => {
-  const [email, setEmail] = useState();
-  const [password, setpassword] = useState();
-  const { signup } = useStateValue();
-  const navigate = useNavigate();
+  // const [email, setEmail] = useState();
+  // const [password, setpassword] = useState();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      await signup(email, password);
-      navigate("/chat");
-    } catch (err) {
-      alert(err);
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     await signup(email, password);
+  //     navigate("/chat");
+  //   } catch (err) {
+  //     alert(err);
+  //   }
+  // };
   return (
     <div className="login__container">
       <div className="bg__img">
@@ -33,19 +29,19 @@ const SignUp = () => {
           <ArrowBackIosIcon />
         </Link>
         <div className="input__section">
-          <form onSubmit={handleSubmit}>
+          <form>
             <h1>Create Account</h1>
             <input
               type="email"
               placeholder="Email"
-              onChange={(e) => setEmail(e.target.value)}
+              // onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="password"
               placeholder="password"
-              onChange={(e) => setpassword(e.target.value)}
+              // onChange={(e) => setpassword(e.target.value)}
             />
-            <button type="submit" onClick={handleSubmit} className="links">
+            <button type="submit" className="links">
               Sign up
             </button>
           </form>
