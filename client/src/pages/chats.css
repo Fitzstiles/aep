@@ -42,7 +42,6 @@
 
 .text__container {
     width: 100%;
-    position: relative;
     height: 100vh;
 }
 
@@ -102,9 +101,8 @@
     align-items: center;
     position: absolute;
     z-index: 1;
-    bottom: 0;
     width: 100%;
-    bottom: -40px;
+    bottom: 10px;
 }
 
 .input__section input {
@@ -112,10 +110,10 @@
     outline: none;
     border: none;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 14px;
     display: flex;
-    background-color: rgb(44, 44, 44);
+    background-color: gray;
     color: white;
 }
 
@@ -124,12 +122,8 @@
     margin: 0 12px;
 }
 
-.bck__ground {
-    background-color: red;
-}
-
 .textssss {
-    height: 78vh;
+    height: 76vh;
     overflow-y: scroll;
 }
 
@@ -137,6 +131,7 @@
     .text__container {
         max-width: 70%;
         margin: auto;
+        position: relative;
     }
 }
 
