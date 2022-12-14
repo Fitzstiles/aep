@@ -43,7 +43,7 @@
 .text__container {
     width: 100%;
     position: relative;
-    height: 90vh;
+    height: 100vh;
 }
 
 .chat__header {
@@ -67,7 +67,6 @@
 .xender {
     display: flex;
     justify-content: right;
-    text-align: right;
     margin: 0 10px;
     margin-top: 10px;
 }
@@ -76,17 +75,17 @@
     background-color: #7f68af;
     padding: 3px 10px;
     border-radius: 10px;
-    margin: 0 10px;
+    margin-right: 10px;
     color: white;
 }
 
 .xender small {
-    text-align: right;
+
     margin-right: 10px;
 }
 
 .receiver {
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .receiver p {
@@ -125,16 +124,25 @@
     margin: 0 12px;
 }
 
+.bck__ground {
+    background-color: red;
+}
+
 .textssss {
-    height: 68vh;
-    margin-bottom: 20px;
+    height: 78vh;
     overflow-y: scroll;
-    background-color: black;
 }
 
 @media screen and (min-width:700px) {
     .text__container {
         max-width: 70%;
         margin: auto;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    .text__container {
+        height: 98vh;
     }
 }

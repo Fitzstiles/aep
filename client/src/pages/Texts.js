@@ -99,11 +99,12 @@ const Texts = () => {
           </div>
         </div>
       </div>
-
-      <div className="input__section">
-        <input type="text" />
-        <InsertEmoticonIcon />
-        <SendIcon onClick={handleMessage} />
+      <div className="bck__ground">
+        <div className="input__section">
+          <input type="text" />
+          <InsertEmoticonIcon />
+          <SendIcon onClick={handleMessage} />
+        </div>
       </div>
     </div>
   );
