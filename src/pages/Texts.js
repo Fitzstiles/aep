@@ -16,10 +16,7 @@ const Texts = () => {
           <ArrowBackIcon />
         </Link>
         <div className="user__img">
-          <img
-            src="https://www.caa.com/caaspeakers/partyHeadshot/hailee-steinfeld.png"
-            alt=""
-          />
+          <img src="./images/snip.png" alt="" />
         </div>
       </div>
       <div className="textssss">
@@ -83,6 +80,17 @@ const Texts = () => {
               exercitationem quam tempore vitae facere perferendis deleniti
               voluptatum ea quo non minus illo, dolorum quisquam delectus. Eos
               expedita totam nobis cumque.
+            </p>
+            <small>12:22</small>
+          </div>
+        </div>
+        <div className="receiver">
+          <div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
+              corrupti iste, quasi voluptatibus, sint harum architecto modi
+              minus facilis numquam reiciendis aut voluptatem repudiandae?
+              Molestias veritatis ullam minima. Quaerat, beatae.
             </p>
             <small>12:22</small>
           </div>
