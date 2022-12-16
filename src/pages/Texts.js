@@ -16,7 +16,7 @@ const Texts = () => {
           <ArrowBackIcon />
         </Link>
         <div className="user__img">
-          <img src="./images/snip.png" alt="" />
+          <img src="./images/snip.PNG" alt="" />
         </div>
       </div>
       <div className="textssss">

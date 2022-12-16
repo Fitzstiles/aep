@@ -1,21 +1,33 @@
 import "./login.css";
 import { Link } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-// import { useState } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../config/firebase";
 
 const Signin = () => {
-  // const [email, setEmail] = useState();
-  // const [password, setpassword] = useState();
+  const [email, setEmail] = useState();
+  const [password, setpassword] = useState();
+  const navigate = useNavigate();
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     await login(email, password);
-  //     navigate("/chat");
-  //   } catch (err) {
-  //     alert(err);
-  //   }
-  // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        if (user) {
+          navigate("/chat");
+        }
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  };
   return (
     <div className="login__container">
       <div className="bg__img">
@@ -28,25 +40,25 @@ const Signin = () => {
         <Link to="/">
           <ArrowBackIosIcon />
         </Link>
-        <div className="input__section">
-          <form>
-            <h1>Log In</h1>
-            <p>Type in your email and password</p>
+        <div className="input_section">
+          <form onSubmit={handleSubmit}>
+            <h1>Create Account</h1>
+            <p>
+              don't have an account? <Link to="/signup">Sign up</Link>
+            </p>
             <input
               type="email"
               placeholder="Email"
-              // onChange={(e) => setEmail(e.target.value)}
+              onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <input
               type="password"
               placeholder="password"
-              // onChange={(e) => setpassword(e.target.value)}
+              onChange={(e) => setpassword(e.target.value)}
             />
-            <p>
-              Don't have an account? <Link to="/signup">Create Account</Link>
-            </p>
-            <button type="submit" className="links">
-              log in
+            <button type="submit" onClick={handleSubmit} className="links">
+              Log in
             </button>
           </form>
         </div>

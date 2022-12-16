@@ -2,36 +2,32 @@ import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { useState } from "react";
-import axios from "axios";
-import { useCookies } from "react-cookie";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../config/firebase";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setpassword] = useState("");
-  const [name, setname] = useState("");
   const navigate = useNavigate();
-  const [cookies, setCookie] = useCookies(["user"]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await axios.post("http://localhost:8080/signup", {
-        email,
-        name,
-        password,
+
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        if (user) {
+          navigate("/chat");
+        }
+      })
+      .catch((error) => {
+        // const errorCode = error.code;
+        const errorMessage = error.message;
+        console.log(errorMessage);
+        // ..
       });
-
-      setCookie("Email", response.data.email);
-      setCookie("userId", response.data.userId);
-      setCookie("AuthToken", response.data.authToken);
-
-      const success = response.status === 201;
-      if (success) {
-        navigate("/chat");
-      }
-    } catch (error) {
-      console.log(error);
-    }
   };
   return (
     <div className="login__container">
@@ -48,16 +44,14 @@ const SignUp = () => {
         <div className="input_section">
           <form onSubmit={handleSubmit}>
             <h1>Create Account</h1>
+            <p>
+              Already have an account? <Link to="/signin">Login</Link>
+            </p>
             <input
               type="email"
               placeholder="Email"
               onChange={(e) => setEmail(e.target.value)}
               required
-            />
-            <input
-              type="text"
-              placeholder="please enter your name"
-              onChange={(e) => setname(e.target.value)}
             />
             <input
               type="password"
