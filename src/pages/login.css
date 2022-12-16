@@ -83,3 +83,9 @@ form input {
 form input::placeholder {
     color: rgb(197, 182, 182);
 }
+
+@media screen and (max-width:400px) {
+    .input_section {
+        bottom: 80px;
+    }
+}
