@@ -28,6 +28,14 @@
     margin: 40px 20px;
 }
 
+.input_section {
+    position: absolute;
+    width: 100%;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 form {
     display: flex;
     align-items: center;

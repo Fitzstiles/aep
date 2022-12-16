@@ -37,7 +37,7 @@ const HeroSection = () => {
           animate={{ translateX: 0 }}
           transition={{ duration: 1 }}
         >
-          <Link to="/signin">Chat with us</Link>
+          <Link to="/signup">Chat with us</Link>
         </motion.div>
       </div>
       <div className="right__container">

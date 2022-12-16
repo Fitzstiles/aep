@@ -44,7 +44,7 @@ const Signin = () => {
           <form onSubmit={handleSubmit}>
             <h1>Create Account</h1>
             <p>
-              don't have an account? <Link to="/signup">Sign up</Link>
+              Don't have an account? <Link to="/signup">Sign up</Link>
             </p>
             <input
               type="email"
